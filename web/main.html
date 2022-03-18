@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="eel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+    label {
+        display: inline-block;
+        width: 70px;
+        text-align: right;
+        margin-right: 30px;
+        margin: 10px
+    }​
+}
+
+    </style>
+</head>
+<body>
+
+
+<h2><b>General Details</b></h2>
+<div class="block">
+    <label>Anime Url</label>
+    <input type="text" size="35" id="input_url"/>
+    <button onclick="loadEpisodes()" id="loadEpisodesBtn">Load Episodes</button>
+</div>
+<div class="block">
+    <label>Save To</label>
+    <input type="text" size="35" id="input_dir"/>
+    <button onclick="browse()" id="browseBtn">Browse</button>
+</div>
+
+
+<table style="width:100%" id="myTable" border="1">
+  <thead>
+    <tr>
+        <th>Anime Title & Episode</th>
+        <th>Progress</th>
+        <th>Size</th>
+    </tr>
+  </thead>
+  <tbody id="tableData">
+
+  </tbody>
+</table>
+
+<!--<div class="block">-->
+<!--    <label>Episodes</label>-->
+<!--    <input type="text" size="35" id="input_eps"/>-->
+<!--    <input type="checkbox" id="chkbx1" style="width:25px;height:25px;vertical-align:middle">-->
+<!--</div>-->
+
+<button onclick="downloadProgress()" id="downloadBtn">Downlaod</button>
+
+<!--<script>-->
+<!--    document.getElementById("chkbx1").onchange = function() {-->
+<!--        document.getElementById("input_eps").disabled = this.checked-->
+<!--        document.getElementById("input_eps").value = ""-->
+<!--    };-->
+<!--</script>-->
+
+</body>
+</html>
